@@ -1,5 +1,5 @@
 "use client";
-import { createWorker } from "tesseract.js";
+import { createWorker, type Worker as TesseractWorker } from "tesseract.js";
 import { AlignmentType, Document, Packer, Paragraph, TextRun } from "docx";
 
 type ConvertOptions = {
@@ -22,7 +22,7 @@ export async function convertImagesToDocx(
   const language = options.language || "chi_sim+eng";
 
   // Create Tesseract worker (no logger to avoid DataCloneError)
-  const worker = await createWorker();
+  const worker: TesseractWorker = await createWorker();
   await worker.loadLanguage(language);
   await worker.initialize(language);
 
