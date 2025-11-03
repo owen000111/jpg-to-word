@@ -1,0 +1,37 @@
+{
+  "name": "pdf-to-png",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -p 3000",
+    "build": "node --max-old-space-size=4096 ./node_modules/next/dist/bin/next build",
+    "start": "next start",
+    "lint": "eslint . --ext .ts,.tsx"
+  },
+  "dependencies": {
+    "@types/react-pdf": "^6.2.0",
+    "formidable": "^3.5.4",
+    "html2canvas": "^1.4.1",
+    "jszip": "3.10.1",
+    "mime-types": "^3.0.1",
+    "next": "14.2.5",
+    "docx": "^8.5.0",
+    "pdf-lib": "^1.17.1",
+    "pdfjs-dist": "^5.4.296",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-pdf": "^10.2.0",
+    "tesseract.js": "^5.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "20.11.30",
+    "@types/react": "18.2.21",
+    "autoprefixer": "10.4.19",
+    "copy-webpack-plugin": "^13.0.1",
+    "eslint": "8.57.0",
+    "eslint-config-next": "14.2.5",
+    "postcss": "8.4.35",
+    "tailwindcss": "3.4.3",
+    "typescript": "5.4.5"
+  }
+}
