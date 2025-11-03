@@ -43,7 +43,7 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {
-  const GA_ID = process.env.NEXT_PUBLIC_GA_ID || "G-SLP1QZLBL3";
+  const GA_ID = process.env.NEXT_PUBLIC_GA_ID || "G-WC7LHLMKXJ";
   return (
     <html lang="zh-CN">
       <head>
@@ -92,22 +92,19 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         </Script>
       </head>
       <body className="min-h-screen bg-gray-50">
-        {process.env.NODE_ENV === 'production' && (
-          <>
-            <Script
-              src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
-              strategy="afterInteractive"
-            />
-            <Script id="ga-gtag" strategy="afterInteractive">
-              {`
-                window.dataLayer = window.dataLayer || [];
-                function gtag(){dataLayer.push(arguments);}
-                gtag('js', new Date());
-                gtag('config', '${GA_ID}');
-              `}
-            </Script>
-          </>
-        )}
+        {/* Google tag (gtag.js) */}
+        <Script
+          src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
+          strategy="afterInteractive"
+        />
+        <Script id="ga-gtag" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${GA_ID}');
+          `}
+        </Script>
         {children}
       </body>
     </html>
