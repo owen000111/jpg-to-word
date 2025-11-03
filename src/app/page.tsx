@@ -5,6 +5,9 @@ import { getTranslation, Language } from "../lib/i18n";
 import { convertImagesToDocx } from "../lib/jpg-to-word";
 
 export default function Page() {
+  const MAX_FILES = 20;
+  const MAX_SIZE_PER = 10 * 1024 * 1024; // 10MB
+  const MAX_TOTAL = 200 * 1024 * 1024; // 200MB
   const language = useLanguage();
   const t = (key: keyof typeof import('../lib/i18n').translations.zh, params?: Record<string, string | number>) => 
     getTranslation(language, key, params);
@@ -32,11 +35,34 @@ export default function Page() {
     }
   }, [language]);
 
-  const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    if (e.target.files) {
-      const incoming = Array.from(e.target.files);
-      setFiles((prev) => [...prev, ...incoming]);
+  const isAcceptableImage = (f: File) => {
+    const isImage = f.type.startsWith("image/") || /\.(png|jpg|jpeg|webp)$/i.test(f.name);
+    return isImage && f.size <= MAX_SIZE_PER;
+  };
+
+  const clampByLimits = (list: File[]): File[] => {
+    let filtered = list.filter(isAcceptableImage).slice(0, MAX_FILES);
+    // Enforce total size limit by trimming from the end
+    let total = 0;
+    const kept: File[] = [];
+    for (const f of filtered) {
+      if (total + f.size <= MAX_TOTAL) {
+        kept.push(f);
+        total += f.size;
+      } else {
+        break;
+      }
     }
+    return kept;
+  };
+
+  const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    if (!e.target.files) return;
+    const incoming = Array.from(e.target.files);
+    setFiles((prev) => {
+      const merged = [...prev, ...incoming];
+      return clampByLimits(merged);
+    });
   };
 
   const onConvert = async () => {
@@ -188,10 +214,12 @@ export default function Page() {
               onDragOver={(e) => e.preventDefault()}
               onDrop={(e) => {
                 e.preventDefault();
-                if (e.dataTransfer.files) {
-                  const incoming = Array.from(e.dataTransfer.files);
-                  setFiles((prev) => [...prev, ...incoming]);
-                }
+                if (!e.dataTransfer.files) return;
+                const incoming = Array.from(e.dataTransfer.files);
+                setFiles((prev) => {
+                  const merged = [...prev, ...incoming];
+                  return clampByLimits(merged);
+                });
               }}
             >
               <div className="space-y-4">
