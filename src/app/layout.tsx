@@ -92,13 +92,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       <body className="min-h-screen bg-gray-50">
         {SHOULD_LOAD_GA && (
           <>
-            <Script
-              src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
-              strategy="afterInteractive"
-              onError={(e) => {
-                console.warn("Failed to load GA script", e);
-              }}
-            />
+            <Script src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`} strategy="afterInteractive" />
             <Script id="ga-gtag" strategy="afterInteractive">
               {`
                 try {
