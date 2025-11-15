@@ -1,3 +1,5 @@
-export { default } from "../../en/terms/page";
+import { redirect } from "next/navigation";
 
-
+export default function PtTermsRedirect() {
+  redirect("/terms");
+}

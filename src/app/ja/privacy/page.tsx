@@ -1,3 +1,5 @@
-export { default } from "../../en/privacy/page";
+import { redirect } from "next/navigation";
 
-
+export default function JaPrivacyRedirect() {
+  redirect("/privacy");
+}

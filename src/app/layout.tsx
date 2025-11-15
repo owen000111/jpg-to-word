@@ -3,12 +3,9 @@ import type { ReactNode } from "react";
 import Script from "next/script";
 
 export const metadata = {
-  title: "PDF to PNG — Free Online Converter | High Quality & Private",
-  description: "Convert PDF to PNG instantly in your browser. Fast, high-quality PDF to PNG conversion with multi-page support, batch export, and ZIP download. 100% client-side processing, no uploads required, complete privacy protection.",
-  metadataBase: new URL("https://pdftopng.online"),
-  alternates: {
-    canonical: "https://pdftopng.online/"
-  },
+  title: "JPG to Word — Free Online OCR | Private & Fast",
+  description: "Convert JPG/PNG images to editable Word (DOCX) directly in your browser. Local OCR, multi-image merge, zero uploads.",
+  metadataBase: new URL("https://jpgtoword.best"),
   icons: {
     icon: [
       { url: "/favicon.ico", sizes: "any" },
@@ -19,23 +16,23 @@ export const metadata = {
   },
   openGraph: {
     type: "website",
-    url: "https://pdftopng.online/",
-    title: "PDF to PNG — Free Online Converter | High Quality & Private",
-    siteName: "PDF to PNG Online",
-    description: "Convert PDF to PNG instantly in your browser. Fast, high-quality PDF to PNG conversion with multi-page support, batch export, and ZIP download. 100% client-side processing, no uploads required, complete privacy protection.",
+    url: "https://jpgtoword.best/",
+    title: "JPG to Word — Free Online OCR | Private & Fast",
+    siteName: "JPG to Word Online",
+    description: "Convert JPG/PNG images to editable Word (DOCX) directly in your browser. Local OCR, multi-image merge, zero uploads.",
     images: [
       {
         url: "/og.png",
         width: 1200,
         height: 630,
-        alt: "PDF to PNG Online"
+        alt: "JPG to Word Online"
       }
     ]
   },
   twitter: {
     card: "summary_large_image",
-    title: "PDF to PNG — Free Online Converter | High Quality & Private",
-    description: "Convert PDF to PNG instantly in your browser. Fast, high-quality PDF to PNG conversion with multi-page support, batch export, and ZIP download. 100% client-side processing, no uploads required, complete privacy protection.",
+    title: "JPG to Word — Free Online OCR | Private & Fast",
+    description: "Convert JPG/PNG images to editable Word (DOCX) directly in your browser. Local OCR, multi-image merge, zero uploads.",
     images: ["/og.png"],
     site: "@",
     creator: "@"
@@ -44,6 +41,7 @@ export const metadata = {
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   const GA_ID = process.env.NEXT_PUBLIC_GA_ID || "G-WC7LHLMKXJ";
+  const SHOULD_LOAD_GA = process.env.NEXT_PUBLIC_LOAD_GA === "true" || process.env.NODE_ENV === "production";
   return (
     <html lang="zh-CN">
       <head>
@@ -52,18 +50,18 @@ export default function RootLayout({ children }: { children: ReactNode }) {
             {
               "@context": "https://schema.org",
               "@type": "WebSite",
-              "name": "PDF to PNG Online",
-              "url": "https://pdftopng.online/",
+              "name": "JPG to Word Online",
+              "url": "https://jpgtoword.best/",
               "inLanguage": "en",
-              "alternateName": ["PDF 转 PNG 在线转换", "PDF to PNG Converter"],
-              "description": "Convert PDF to PNG instantly in your browser. Fast, high-quality PDF to PNG conversion with multi-page support, batch export, and ZIP download. 100% client-side processing, no uploads required, complete privacy protection.",
+              "alternateName": ["JPG to Word Online Converter", "Image to Word OCR"],
+              "description": "Convert JPG/PNG images to editable Word (DOCX) directly in your browser. Local OCR, multi-image merge, zero uploads.",
               "publisher": {
                 "@type": "Organization",
-                "name": "PDF to PNG",
-                "url": "https://pdftopng.online/",
+                "name": "JPG to Word",
+                "url": "https://jpgtoword.best/",
                 "logo": {
                   "@type": "ImageObject",
-                  "url": "https://pdftopng.online/android-chrome-512x512.png",
+                  "url": "https://jpgtoword.best/android-chrome-512x512.png",
                   "width": 512,
                   "height": 512
                 }
@@ -76,12 +74,12 @@ export default function RootLayout({ children }: { children: ReactNode }) {
             {
               "@context": "https://schema.org",
               "@type": "SoftwareApplication",
-              "name": "PDF to PNG Online Converter",
+              "name": "JPG to Word Online Converter",
               "applicationCategory": "Utility",
               "operatingSystem": "Web",
-              "url": "https://pdftopng.online/",
-              "image": "https://pdftopng.online/og.png",
-              "description": "Convert PDF to PNG instantly in your browser. Fast, high-quality PDF to PNG conversion with multi-page support, batch export, and ZIP download. 100% client-side processing, no uploads required, complete privacy protection.",
+              "url": "https://jpgtoword.best/",
+              "image": "https://jpgtoword.best/og.png",
+              "description": "Convert JPG/PNG images to editable Word (DOCX) directly in your browser. Local OCR, multi-image merge, zero uploads.",
               "offers": {
                 "@type": "Offer",
                 "price": "0",
@@ -92,19 +90,29 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         </Script>
       </head>
       <body className="min-h-screen bg-gray-50">
-        {/* Google tag (gtag.js) */}
-        <Script
-          src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
-          strategy="afterInteractive"
-        />
-        <Script id="ga-gtag" strategy="afterInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', '${GA_ID}');
-          `}
-        </Script>
+        {SHOULD_LOAD_GA && (
+          <>
+            <Script
+              src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
+              strategy="afterInteractive"
+              onError={(e) => {
+                console.warn("Failed to load GA script", e);
+              }}
+            />
+            <Script id="ga-gtag" strategy="afterInteractive">
+              {`
+                try {
+                  window.dataLayer = window.dataLayer || [];
+                  function gtag(){dataLayer.push(arguments);}
+                  gtag('js', new Date());
+                  gtag('config', '${GA_ID}');
+                } catch (err) {
+                  console.warn('GA init skipped', err);
+                }
+              `}
+            </Script>
+          </>
+        )}
         {children}
       </body>
     </html>
