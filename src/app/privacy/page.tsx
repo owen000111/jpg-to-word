@@ -114,5 +114,25 @@ export default function PrivacyPage() {
   );
 }
 
-export const metadata: Metadata = buildCanonicalMetadata("/privacy");
+const canonicalMetadata = buildCanonicalMetadata("/privacy");
+
+export const metadata: Metadata = {
+  ...canonicalMetadata,
+  title: "Privacy Policy | JPG to Word Online",
+  description:
+    "Understand how JPG to Word handles analytics data, cookies, and on-device OCR privacy. Learn what information we collect, how it is used, and your rights.",
+  openGraph: {
+    title: "JPG to Word Privacy Policy",
+    description:
+      "Learn how the JPG to Word converter protects your data, keeps OCR local, and what analytics are collected.",
+    url: "https://jpgtoword.best/privacy",
+    type: "article"
+  },
+  twitter: {
+    card: "summary",
+    title: "JPG to Word Privacy Policy",
+    description:
+      "Understand how JPG to Word handles analytics, cookies, and local OCR privacy protections."
+  }
+};
 

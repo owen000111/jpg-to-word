@@ -109,5 +109,25 @@ export default function TermsPage() {
   );
 }
 
-export const metadata: Metadata = buildCanonicalMetadata("/terms");
+const canonicalMetadata = buildCanonicalMetadata("/terms");
+
+export const metadata: Metadata = {
+  ...canonicalMetadata,
+  title: "Terms of Service | JPG to Word Online",
+  description:
+    "Review the JPG to Word OCR Terms of Service covering acceptable use, licensing, service availability, and limitations of liability.",
+  openGraph: {
+    title: "JPG to Word Terms of Service",
+    description:
+      "Understand the rules, responsibilities, and limitations when using the JPG to Word converter.",
+    url: "https://jpgtoword.best/terms",
+    type: "article"
+  },
+  twitter: {
+    card: "summary",
+    title: "JPG to Word Terms of Service",
+    description:
+      "Learn about acceptable use, service scope, and liability for JPG to Word OCR."
+  }
+};
 
