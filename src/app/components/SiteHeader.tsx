@@ -25,6 +25,7 @@ export function SiteHeader() {
   ) => getTranslation(language, key, params);
 
   const headerTagline = t("headerTagline", { keyword: KEYWORD });
+  const homeUrl = language === "en" ? "/" : `/${language}`;
 
   return (
     <header className="sticky top-0 z-40 bg-white/95 backdrop-blur shadow-sm">
@@ -32,17 +33,19 @@ export function SiteHeader() {
         <div className="flex justify-between items-center py-6">
           <div className="flex items-center space-x-6">
             <div className="flex items-center">
-              <h1 className="text-2xl sm:text-3xl font-extrabold tracking-tight">
-                <span className="bg-clip-text text-transparent bg-gradient-to-r from-sky-600 to-blue-500">
-                  JPG
-                </span>
-                <span className="mx-2 px-2 py-0.5 rounded-full text-[11px] sm:text-xs font-semibold tracking-wider bg-gray-100 text-gray-600 align-middle">
-                  to
-                </span>
-                <span className="bg-clip-text text-transparent bg-gradient-to-r from-rose-600 to-red-500">
-                  Word
-                </span>
-              </h1>
+              <a href={homeUrl} className="hover:opacity-80 transition-opacity">
+                <h1 className="text-2xl sm:text-3xl font-extrabold tracking-tight">
+                  <span className="bg-clip-text text-transparent bg-gradient-to-r from-sky-600 to-blue-500">
+                    JPG
+                  </span>
+                  <span className="mx-2 px-2 py-0.5 rounded-full text-[11px] sm:text-xs font-semibold tracking-wider bg-gray-100 text-gray-600 align-middle">
+                    to
+                  </span>
+                  <span className="bg-clip-text text-transparent bg-gradient-to-r from-rose-600 to-red-500">
+                    Word
+                  </span>
+                </h1>
+              </a>
               <span className="ml-3 hidden sm:inline text-sm text-gray-500">
                 {headerTagline}
               </span>

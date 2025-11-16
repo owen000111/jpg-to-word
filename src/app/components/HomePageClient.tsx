@@ -581,7 +581,7 @@ export default function HomePageClient() {
                   {faq.icon}
                 </div>
                 <div>
-                  <div className="text-base font-semibold text-gray-900 mb-1">{t(faq.questionKey as TranslationKey)}</div>
+                  <div className="text-base font-semibold text-gray-900 mb-1">{t(faq.questionKey as TranslationKey, { keyword: KEYWORD })}</div>
                   <div className="text-sm text-gray-600 leading-relaxed">
                     {t(faq.answerKey as TranslationKey, { keyword: KEYWORD })}
                   </div>

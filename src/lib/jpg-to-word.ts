@@ -47,22 +47,6 @@ export async function convertImagesToDocx(
 
       const text = (data?.text || "").trim();
 
-      // Add a page header for each image
-      paragraphs.push(
-        new Paragraph({
-          alignment: AlignmentType.LEFT,
-          children: [
-            new TextRun({
-              text: `Image: ${file.name}`,
-              bold: true,
-              size: 26,
-            }),
-          ],
-        })
-      );
-
-      paragraphs.push(new Paragraph(""));
-
       // Add OCR text (split to avoid overly long runs)
       const lines = text.split(/\r?\n/);
       for (const line of lines) {
