@@ -43,7 +43,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   const GA_ID = process.env.NEXT_PUBLIC_GA_ID || "G-WC7LHLMKXJ";
   const SHOULD_LOAD_GA = process.env.NEXT_PUBLIC_LOAD_GA === "true" || process.env.NODE_ENV === "production";
   return (
-    <html lang="zh-CN">
+    <html lang="en">
       <head>
         <Script id="ld-json-website" type="application/ld+json" strategy="afterInteractive">
           {`
