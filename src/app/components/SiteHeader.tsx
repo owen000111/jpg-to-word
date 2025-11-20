@@ -74,16 +74,10 @@ export function SiteHeader() {
                   }
 
                   const supported: Language[] = [
-                    "zh",
-                    "zh-Hant",
                     "es",
-                    "ar",
                     "pt",
-                    "ru",
                     "fr",
                     "de",
-                    "ja",
-                    "ko",
                   ];
 
                   if (supported.includes(newLang)) {
@@ -95,16 +89,10 @@ export function SiteHeader() {
                 className="appearance-none bg-white border border-gray-200 rounded-lg px-4 py-2 pr-8 text-sm font-medium text-gray-700 hover:border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors duration-200"
               >
                 <option value="en">English</option>
-                <option value="zh">中文</option>
-                <option value="zh-Hant">繁體中文</option>
                 <option value="es">Español</option>
-                <option value="ar">العربية</option>
                 <option value="pt">Português</option>
-                <option value="ru">Русский</option>
                 <option value="fr">Français</option>
                 <option value="de">Deutsch</option>
-                <option value="ja">日本語</option>
-                <option value="ko">한국어</option>
               </select>
               <div className="absolute inset-y-0 right-0 flex items-center pr-2 pointer-events-none">
                 <svg

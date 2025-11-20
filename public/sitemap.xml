@@ -8,52 +8,10 @@
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://jpgtoword.best/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://jpgtoword.best/"/>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://jpgtoword.best/zh"/>
-    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://jpgtoword.best/zh-Hant"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://jpgtoword.best/es"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://jpgtoword.best/ar"/>
     <xhtml:link rel="alternate" hreflang="pt" href="https://jpgtoword.best/pt"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://jpgtoword.best/ru"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://jpgtoword.best/fr"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://jpgtoword.best/de"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://jpgtoword.best/ja"/>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://jpgtoword.best/ko"/>
-  </url>
-  <!-- 简体中文首页 -->
-  <url>
-    <loc>https://jpgtoword.best/zh</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://jpgtoword.best/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://jpgtoword.best/"/>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://jpgtoword.best/zh"/>
-    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://jpgtoword.best/zh-Hant"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://jpgtoword.best/es"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://jpgtoword.best/ar"/>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://jpgtoword.best/pt"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://jpgtoword.best/ru"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://jpgtoword.best/fr"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://jpgtoword.best/de"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://jpgtoword.best/ja"/>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://jpgtoword.best/ko"/>
-  </url>
-  <!-- 繁体中文首页 -->
-  <url>
-    <loc>https://jpgtoword.best/zh-Hant</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://jpgtoword.best/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://jpgtoword.best/"/>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://jpgtoword.best/zh"/>
-    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://jpgtoword.best/zh-Hant"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://jpgtoword.best/es"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://jpgtoword.best/ar"/>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://jpgtoword.best/pt"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://jpgtoword.best/ru"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://jpgtoword.best/fr"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://jpgtoword.best/de"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://jpgtoword.best/ja"/>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://jpgtoword.best/ko"/>
   </url>
   <!-- 西班牙语首页 -->
   <url>
@@ -62,34 +20,10 @@
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://jpgtoword.best/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://jpgtoword.best/"/>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://jpgtoword.best/zh"/>
-    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://jpgtoword.best/zh-Hant"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://jpgtoword.best/es"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://jpgtoword.best/ar"/>
     <xhtml:link rel="alternate" hreflang="pt" href="https://jpgtoword.best/pt"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://jpgtoword.best/ru"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://jpgtoword.best/fr"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://jpgtoword.best/de"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://jpgtoword.best/ja"/>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://jpgtoword.best/ko"/>
-  </url>
-  <!-- 阿拉伯语首页 -->
-  <url>
-    <loc>https://jpgtoword.best/ar</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://jpgtoword.best/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://jpgtoword.best/"/>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://jpgtoword.best/zh"/>
-    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://jpgtoword.best/zh-Hant"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://jpgtoword.best/es"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://jpgtoword.best/ar"/>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://jpgtoword.best/pt"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://jpgtoword.best/ru"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://jpgtoword.best/fr"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://jpgtoword.best/de"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://jpgtoword.best/ja"/>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://jpgtoword.best/ko"/>
   </url>
   <!-- 葡萄牙语首页 -->
   <url>
@@ -98,34 +32,10 @@
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://jpgtoword.best/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://jpgtoword.best/"/>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://jpgtoword.best/zh"/>
-    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://jpgtoword.best/zh-Hant"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://jpgtoword.best/es"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://jpgtoword.best/ar"/>
     <xhtml:link rel="alternate" hreflang="pt" href="https://jpgtoword.best/pt"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://jpgtoword.best/ru"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://jpgtoword.best/fr"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://jpgtoword.best/de"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://jpgtoword.best/ja"/>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://jpgtoword.best/ko"/>
-  </url>
-  <!-- 俄语首页 -->
-  <url>
-    <loc>https://jpgtoword.best/ru</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://jpgtoword.best/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://jpgtoword.best/"/>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://jpgtoword.best/zh"/>
-    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://jpgtoword.best/zh-Hant"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://jpgtoword.best/es"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://jpgtoword.best/ar"/>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://jpgtoword.best/pt"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://jpgtoword.best/ru"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://jpgtoword.best/fr"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://jpgtoword.best/de"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://jpgtoword.best/ja"/>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://jpgtoword.best/ko"/>
   </url>
   <!-- 法语首页 -->
   <url>
@@ -134,16 +44,10 @@
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://jpgtoword.best/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://jpgtoword.best/"/>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://jpgtoword.best/zh"/>
-    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://jpgtoword.best/zh-Hant"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://jpgtoword.best/es"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://jpgtoword.best/ar"/>
     <xhtml:link rel="alternate" hreflang="pt" href="https://jpgtoword.best/pt"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://jpgtoword.best/ru"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://jpgtoword.best/fr"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://jpgtoword.best/de"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://jpgtoword.best/ja"/>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://jpgtoword.best/ko"/>
   </url>
   <!-- 德语首页 -->
   <url>
@@ -152,52 +56,10 @@
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://jpgtoword.best/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://jpgtoword.best/"/>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://jpgtoword.best/zh"/>
-    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://jpgtoword.best/zh-Hant"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://jpgtoword.best/es"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://jpgtoword.best/ar"/>
     <xhtml:link rel="alternate" hreflang="pt" href="https://jpgtoword.best/pt"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://jpgtoword.best/ru"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://jpgtoword.best/fr"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://jpgtoword.best/de"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://jpgtoword.best/ja"/>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://jpgtoword.best/ko"/>
-  </url>
-  <!-- 日语首页 -->
-  <url>
-    <loc>https://jpgtoword.best/ja</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://jpgtoword.best/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://jpgtoword.best/"/>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://jpgtoword.best/zh"/>
-    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://jpgtoword.best/zh-Hant"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://jpgtoword.best/es"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://jpgtoword.best/ar"/>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://jpgtoword.best/pt"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://jpgtoword.best/ru"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://jpgtoword.best/fr"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://jpgtoword.best/de"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://jpgtoword.best/ja"/>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://jpgtoword.best/ko"/>
-  </url>
-  <!-- 韩语首页 -->
-  <url>
-    <loc>https://jpgtoword.best/ko</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://jpgtoword.best/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://jpgtoword.best/"/>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://jpgtoword.best/zh"/>
-    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://jpgtoword.best/zh-Hant"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://jpgtoword.best/es"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://jpgtoword.best/ar"/>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://jpgtoword.best/pt"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://jpgtoword.best/ru"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://jpgtoword.best/fr"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://jpgtoword.best/de"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://jpgtoword.best/ja"/>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://jpgtoword.best/ko"/>
   </url>
   <!-- 隐私政策 -->
   <url>
@@ -212,4 +74,3 @@
     <priority>0.4</priority>
   </url>
 </urlset>
-

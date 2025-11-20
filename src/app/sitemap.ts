@@ -2,7 +2,7 @@ import type { MetadataRoute } from 'next';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://jpgtoword.best';
-  const langs = ['en','zh','zh-Hant','es','ar','pt','ru','fr','de','ja','ko'] as const;
+  const langs = ['en','es','pt','fr','de'] as const;
   const defaultLang = 'en';
 
   const now = new Date();

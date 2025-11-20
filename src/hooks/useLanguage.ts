@@ -15,7 +15,7 @@ export function useLanguage(): Language {
   const locale = segments[1];
   
   // 验证语言代码
-  const supported: Language[] = ['en','zh','zh-Hant','es','ar','pt','ru','fr','de','ja','ko'];
+  const supported: Language[] = ['en','es','pt','fr','de'];
   if (supported.includes(locale as Language)) return locale as Language;
   
   // 默认为英文
