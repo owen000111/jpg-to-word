@@ -10,5 +10,7 @@ const nextConfig = {
     config.cache = false;
     return config;
   },
+  devIndicators: false,
+  turbopack: {},
 };
 module.exports = nextConfig;
