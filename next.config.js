@@ -12,5 +12,6 @@ const nextConfig = {
   },
   devIndicators: false,
   turbopack: {},
+
 };
 module.exports = nextConfig;

@@ -3,34 +3,38 @@ import type { NextRequest } from 'next/server';
 
 // Supported locales
 const locales = ['en', 'zh', 'zh-Hant', 'es', 'ar', 'pt', 'ru', 'fr', 'de'];
-
-function getLocaleFromPath(pathname: string): string | null {
-  const first = pathname.split('/')[1];
-  return locales.includes(first) ? first : null;
-}
+const defaultLocale = 'en';
 
 export function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;
 
-  // Ignore public files and API
-  if (pathname.startsWith('/_next') || pathname.startsWith('/api') || pathname.match(/\.(?:png|jpg|jpeg|gif|svg|ico|txt|json|map)$/)) {
+  // Ignore internal paths, API routes, and static files
+  if (
+    pathname.startsWith('/_next') ||
+    pathname.startsWith('/api') ||
+    /\.(?:png|jpg|jpeg|gif|svg|ico|txt|json|map|css|js|woff|woff2)$/i.test(pathname)
+  ) {
     return NextResponse.next();
   }
 
-  // If path already has a locale, continue
-  const currentLocale = getLocaleFromPath(pathname);
-  if (currentLocale) {
-    return NextResponse.next();
+  // Check if path already starts with a supported locale
+  const pathnameIsMissingLocale = locales.every(
+    (locale) => !pathname.startsWith(`/${locale}/`) && pathname !== `/${locale}`
+  );
+
+  if (pathnameIsMissingLocale) {
+    const url = request.nextUrl.clone();
+    // Redirect to default locale
+    url.pathname = `/${defaultLocale}${pathname.startsWith('/') ? pathname : `/${pathname}`}`;
+    return NextResponse.redirect(url);
   }
 
-  // Redirect root and any non-localized paths to default locale (en)
-  const url = request.nextUrl.clone();
-  url.pathname = `/en${pathname === '/' ? '' : pathname}`;
-  return NextResponse.redirect(url);
+  return NextResponse.next();
 }
 
 export const config = {
-  matcher: ['/((?!_next|.*\\..*).*)'],
+  // Matcher ignoring _next, api, and static files references by extension
+  matcher: ['/((?!_next|api|.*\\..*).*)'],
 };
 
 
